@@ -1,0 +1,11 @@
+﻿@model GiphyAPIJim1.Models.Gif
+
+@{
+    ViewBag.Title = "Wall-O-Dogs";
+}
+
+
+@foreach (var item in Model.data)
+{
+    <img src="@item.images.original.url" style="height:240px;width:300px;" />
+}
